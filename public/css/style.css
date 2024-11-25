@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-y: auto; 
+    scroll-behavior: smooth; 
+}
+
+
+.landing-page, .image-content {
+    height: 100vh; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start; 
+}
+
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Landing Page Content */
+.content {
+    margin-left: 50rem ;
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+.content h1 {
+    text-align: right;
+    font-size: 3rem;
+    line-height: 1.5;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.content .highlight {
+    color: orange;
+    font-weight: bold;
+}
+
+.content p {
+    text-align: right;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Image Content Section */
+.image-background {
+    background: linear-gradient(135deg, #000, #f8be40);
+    width: 100%;
+    height: 100%;
+}
+
+.content2 {
+    margin-top: 5rem;
+    text-align: center;
+    color: white;
+}
+
+.content2 h1 {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.content2 h2 {
+    font-weight: 300;
+}
+
+.content2 .highlight2 {
+    font-weight: 300;
+    color: rgb(228, 167, 11);
+}
+
+/* Button Styling */
+.btn-custom {
+    margin-top: 1rem;
+    background: rgba(169, 169, 169, 0.1);
+    color: white;
+    border: 1px solid rgba(170, 169, 169,0.1);
+    padding: 1rem 2rem;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    background: white;
+    color: black;
+}
+
+.input{
+    margin: auto;
+    width: 14rem;
+}
+
+.input .input1{
+    text-align: center;
+    margin-top: 1rem;
+    background: rgba(169, 169, 169, 0.1);
+    color: white;
+    border: 1px solid rgba(170, 169, 169,0.1);
+    padding: 1rem 2rem;
+    border-radius: 18px;
+}
+
+.input .input2{
+    
+    text-align: center;
+    margin-top: 1rem;
+    background: rgba(169, 169, 169, 0.1);
+    color: white;
+    border: 1px solid rgba(170, 169, 169,0.1);
+    padding: 1rem 2rem;
+    border-radius: 18px;
+}
+

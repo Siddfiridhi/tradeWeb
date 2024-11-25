@@ -15,7 +15,7 @@ app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile);
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/TradeDB', {
+mongoose.connect('process.env.MONGODB_URI', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })

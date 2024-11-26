@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+
+
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,27 +13,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-   
 </head>
 <body>
 
     <div class="landing-page">
-        
-    <div class="video-container" >
-        <video autoplay loop muted playsinline>
-            <source src="/assets/videoplayback.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="/assets/videoplayback.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content">
+            <h1>Are you an <br><span class="highlight">Option Buyer?</span></h1>
+            <p>We are one among you....</p>
+            <br>
+        </div>
     </div>
-
-    
-    <div class="content">
-        <h1>Are you an <br><span class="highlight">Option Buyer?</span></h1>
-        <p>We are one among you....</p>
-        <br>
-    </div>
-    </div>
-        
 
     <div class="image-content">
         <div class="image-background">
@@ -41,38 +39,23 @@
                 <br>
                 <h2>We'd love to have you in our tribe</h2>
                 <br>
-                <form method="POST" action="/listing" novalidate class="needs-validation" >
-
+                <form method="POST" action="/listing" novalidate class="needs-validation">
                     <div class="input">
-                        <div >
-                            <input type="email"  name="Email" placeholder="Email" class="form-control input1" required>
+                        <div>
+                            <input type="email" name="Email" placeholder="Email" class="form-control input1" required>
                         </div>
-                        <!-- <div >
-                            
-                            <input type="text"  name="Mobile" placeholder="Mobile no"  class="form-control input2" required>
-                        </div> -->
                     </div>
-                    
-                        <p>
-                            <button class="btn-custom">Submit &nbsp;<i class="fa-regular fa-paper-plane"></i></button>
-                        </p>
+                    <p>
+                        <button class="btn-custom">Submit &nbsp;<i class="fa-regular fa-paper-plane"></i></button>
+                    </p>
                 </form>
-                
-                
-                
             </div>
         </div>
     </div>
 
-
-
-
-    
-    
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
 
-   
 </body>
 </html>
+

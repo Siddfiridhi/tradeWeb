@@ -1,5 +1,7 @@
 
-* {
+
+
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +13,6 @@ body {
     scroll-behavior: smooth; 
 }
 
-
 .landing-page, .image-content {
     height: 100vh; 
     width: 100%;
@@ -21,11 +22,9 @@ body {
     scroll-snap-align: start; 
 }
 
-
 html {
     scroll-snap-type: y mandatory;
 }
-
 
 .video-container {
     position: absolute;
@@ -43,9 +42,8 @@ video {
     object-fit: cover;
 }
 
-/* Landing Page Content */
 .content {
-    margin-left: 50rem ;
+    margin-left: 50rem;
     text-align: center;
     z-index: 1;
     color: white;
@@ -70,7 +68,6 @@ video {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Image Content Section */
 .image-background {
     background: linear-gradient(135deg, #000, #f8be40);
     width: 100%;
@@ -97,12 +94,11 @@ video {
     color: rgb(228, 167, 11);
 }
 
-/* Button Styling */
 .btn-custom {
     margin-top: 1rem;
     background: rgba(169, 169, 169, 0.1);
     color: white;
-    border: 1px solid rgba(170, 169, 169,0.1);
+    border: 1px solid rgba(170, 169, 169, 0.1);
     padding: 1rem 2rem;
     border-radius: 18px;
     cursor: pointer;
@@ -113,29 +109,67 @@ video {
     color: black;
 }
 
-.input{
+.input {
     margin: auto;
     width: 14rem;
 }
 
-.input .input1{
+.input .input1 {
     text-align: center;
     margin-top: 1rem;
     background: rgba(169, 169, 169, 0.1);
     color: white;
-    border: 1px solid rgba(170, 169, 169,0.1);
+    border: 1px solid rgba(170, 169, 169, 0.1);
     padding: 1rem 2rem;
     border-radius: 18px;
 }
 
-.input .input2{
-    
-    text-align: center;
-    margin-top: 1rem;
-    background: rgba(169, 169, 169, 0.1);
-    color: white;
-    border: 1px solid rgba(170, 169, 169,0.1);
-    padding: 1rem 2rem;
-    border-radius: 18px;
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .content {
+        background-color: rgba(255, 255, 255,0.15);
+        border-radius: 1rem;
+        margin-left: 0;
+        padding: 2rem;
+    }
+
+    .content h1 {
+        margin-top: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .content2 {
+        margin-top: 10rem;
+    }
+
+    .content2 h1 {
+        font-size: 1.5rem;
+    }
+
+    .content2 h2 {
+        margin-top: -1.4rem;
+        font-size: 1rem;
+    }
+
+    .input {
+        width: 90%;
+    }
+
+    .input .input1 {
+        margin: auto;
+        width: 80%;
+        padding: 0.5rem;
+    }
+
+    .btn-custom {
+        margin-top: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
 }
 
